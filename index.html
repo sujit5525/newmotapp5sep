@@ -1,0 +1,37 @@
+<html>
+<head>
+<title> New Motivational Msg APP </title>
+<style>
+* { font-size:40px; font-family:Arial;}
+body{background-color:lightblue;}
+</style>
+</head>
+
+<body>
+<center>
+<h1>New Motivational Msg App</h1>
+<h2 id="msg"/>
+<script>
+function show()
+{
+let msg = document.getElementById("msg");
+ 
+let messages =[
+"Dream big, work hard.",
+"Embrace the challenge.",
+"Success starts with belief.",
+"Push beyond limits.",
+"Perseverance leads to triumph.",
+"Your potential is limitless.",
+"Turn obstacles into opportunities.",
+];
+let r = parseInt(Math.random()*messages.length);
+msg.innerHTML=messages[r];
+
+}
+show();
+setInterval(show,3000);
+</script>
+</center>
+</body>
+</html>
